@@ -2,8 +2,11 @@
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
-$color-footer:#000000;
+$color-footer: lighten(#000000, 20%);
+$color-footer-text: white;
 $color-bg: #ededed;
 $color-border: darken($color-bg, 10%);
 
 $border-radius-resturants: 15px;
+
+

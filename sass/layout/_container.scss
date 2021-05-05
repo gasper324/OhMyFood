@@ -1,13 +1,13 @@
-.resturant {
+.restaurant {
     background-color: $color-bg;
     padding: 55px 0 65px 0;
 }
-.resturant-title {
+.restaurant-title {
     width: 100%;
     margin: 0 20px 26px 20px;
 }
 
-.resturant-container {
+.restaurant-container {
     margin: 20px;
     border-radius: $border-radius-resturants;
     background-color: #ffffff;
@@ -24,6 +24,11 @@
         display: flex;
         justify-content: space-between;
         padding: 20px 0 0 20px;
+            &--text {
+                display: flex;
+                flex-direction: column;
+                row-gap: 5px;
+            }
     }
     &__heart {
         padding: 0 20px 0 0;
