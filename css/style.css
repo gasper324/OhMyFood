@@ -35,6 +35,30 @@ body {
   color: white;
 }
 
+.heart {
+  position: absolute;
+  left: -9999px;
+}
+.heart:checked + .heart-off {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+.heart-on {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: #ededed;
+}
+
+.heart-off {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
 .new-tag {
   position: absolute;
   top: 12px;
@@ -58,6 +82,10 @@ header {
 }
 
 .link--footer {
+  color: white;
+  text-decoration: none;
+}
+.link--explore {
   color: white;
   text-decoration: none;
 }
@@ -91,7 +119,7 @@ header {
   height: 75px;
   display: flex;
   justify-content: space-between;
-  padding: 20px 0 0 20px;
+  padding: 20px 20px 0 20px;
 }
 .restaurant-container__info--text {
   display: flex;
@@ -99,9 +127,18 @@ header {
   row-gap: 5px;
 }
 .restaurant-container__heart {
-  margin: 0 20px 0 0;
+  padding-right: 20px;
   cursor: pointer;
   height: fit-content;
+  position: relative;
+}
+.restaurant-container__heart--filled {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: linear-gradient(to top right, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 footer {
@@ -185,10 +222,6 @@ footer {
 }
 .step__icon {
   padding: 0 25px 0 33px;
-}
-
-.fas {
-  display: hide;
 }
 
 /*# sourceMappingURL=style.css.map */

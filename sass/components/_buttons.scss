@@ -9,3 +9,24 @@
     background-image: linear-gradient(to bottom right, $color-secondary, $color-primary);
     color: $color-button-text;
 }
+.heart {
+    position: absolute;
+    left: -9999px;
+    &:checked + .heart-off {
+        opacity: 1;
+        transition: opacity 500ms;
+    }
+}
+.heart-on {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: $color-bg;
+}
+.heart-off {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: opacity 500ms;
+}
