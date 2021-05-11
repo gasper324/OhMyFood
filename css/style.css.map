@@ -1,5 +1,1 @@
-<<<<<<< Updated upstream
 {"version":3,"sourceRoot":"","sources":["../sass/utils/_variables.scss","../sass/base/_base.scss","../sass/layout/_header.scss","../sass/layout/_container.scss"],"names":[],"mappings":"AAAA;ACAA;EACI;;;AAEF;EACE;;;ACJJ;EACI;EACA,kBFDY;EEEZ;EACA;;;ACJJ;EACI,kBHIO;EGHP;;;AAEJ;EACI;EACA;;;AAGJ;EACI;EACA,eHHuB;EGIvB;EACA;;AACA;EACI;EACA;EACA;EACA;;AAEJ;EACI;EACA;EACA;EACA;EACA;;AAEJ;EACI","file":"style.css"}
-=======
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"style.css"}
->>>>>>> Stashed changes
