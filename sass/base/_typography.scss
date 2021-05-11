@@ -1,0 +1,15 @@
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+}
+.font-title {
+    @include font-title;
+}
+.font-content {
+    &--bold {
+        font-weight: 900;
+    }
+    &--large {
+        font-size: 16px;
+    }
+}
