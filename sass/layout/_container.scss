@@ -13,6 +13,7 @@
     border-radius: $border-radius-restaurants;
     background-color: #ffffff;
     box-shadow: 4px 2px 4px $color-border;
+    position: relative;
     &__img {
         width: 100%;
         height: 175px;
@@ -32,6 +33,8 @@
             }
     }
     &__heart {
-        padding: 0 20px 0 0;
+        margin: 0 20px 0 0;
+        cursor: pointer;
+        height: fit-content;
     }
 }
