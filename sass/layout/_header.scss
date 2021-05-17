@@ -1,7 +1,18 @@
 header {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+.header-home {
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 15px 0;
     height: 65px;
+}
+.fa-arrow-left {
+    width: 29%;
+}
+.header-text {  
+    width: 71%;
 }
