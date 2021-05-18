@@ -21,7 +21,10 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    color: $color-bg;
+    color: darken($color-bg, 50%);
+    &--home {
+        color: $color-bg;
+    }
 }
 .heart-off {
     position: absolute;

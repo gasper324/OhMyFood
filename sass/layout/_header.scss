@@ -1,18 +1,19 @@
 header {
     position: relative;
-    display: flex;
-    width: 100%;
 }
-.header-home {
+.header {
     width: 100%;
     display: flex;
-    justify-content: center;
-    padding: 15px 0;
+    justify-content: space-between;
+    align-items: center;
     height: 65px;
+    &__img {
+        height: 30px;
+    }
 }
-.fa-arrow-left {
-    width: 29%;
+#header-homepage {
+    justify-content: center;
 }
-.header-text {  
-    width: 71%;
+.fa-arrow-right {
+    visibility: hidden;
 }

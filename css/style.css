@@ -9,7 +9,8 @@ html {
 
 body {
   font-family: Roboto, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
+  color: black;
 }
 
 .font-title {
@@ -21,6 +22,20 @@ body {
 }
 .font-content--large {
   font-size: 16px;
+}
+
+.font-menu--name {
+  font-weight: bolder;
+}
+.font-menu--desc {
+  color: rgba(0, 0, 0, 0.5);
+}
+.font-menu--cost {
+  font-weight: bold;
+}
+.font-menu--section {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
 }
 
 .button {
@@ -48,6 +63,9 @@ body {
   position: absolute;
   top: 0px;
   left: 0px;
+  color: #6e6e6e;
+}
+.heart-on--home {
   color: #ededed;
 }
 
@@ -75,24 +93,25 @@ body {
 
 header {
   position: relative;
-  display: flex;
-  width: 100%;
 }
 
-.header-home {
+.header {
   width: 100%;
   display: flex;
-  justify-content: center;
-  padding: 15px 0;
+  justify-content: space-between;
+  align-items: center;
   height: 65px;
 }
-
-.fa-arrow-left {
-  width: 29%;
+.header__img {
+  height: 30px;
 }
 
-.header-text {
-  width: 71%;
+#header-homepage {
+  justify-content: center;
+}
+
+.fa-arrow-right {
+  visibility: hidden;
 }
 
 .link--footer {
@@ -159,6 +178,60 @@ header {
   background: linear-gradient(to top right, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.restaurant-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.title-bar {
+  position: relative;
+  padding: 40px 0;
+}
+.title-bar__heart {
+  position: absolute;
+  top: 45px;
+  right: 45px;
+}
+
+.menu {
+  width: 100%;
+  padding: 0 14px;
+  border-radius: 25px 25px 0 0;
+  background-color: #ededed;
+  position: relative;
+  top: -40px;
+}
+.menu__section {
+  text-transform: uppercase;
+}
+.menu__divider {
+  background-color: #99E2D0;
+  width: 35px;
+  height: 3px;
+  margin-top: 6px;
+}
+.menu__item {
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.menu__name {
+  padding: 3px 0 8px 0;
+}
+.menu__desc {
+  padding-bottom: 3px;
+}
+.menu__cost {
+  display: flex;
+  align-items: flex-end;
+  padding: 0 12px 4px 0;
 }
 
 footer {

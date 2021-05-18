@@ -1,6 +1,7 @@
 body {
     font-family: Roboto, sans-serif;
-    font-size: 14px;
+    font-size: 12px;
+    color: $color-text;
 }
 .font-title {
     @include font-title;
@@ -11,5 +12,20 @@ body {
     }
     &--large {
         font-size: 16px;
+    }
+}
+.font-menu {
+    &--name {
+        font-weight: bolder;
+    }
+    &--desc {
+        color: fade-out($color-text, .5);
+    }
+    &--cost {
+        font-weight: bold;
+    }
+    &--section {
+        color: fade-out($color-text, .5);
+        font-size: 14px;
     }
 }
