@@ -1,4 +1,12 @@
 /* colors */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 html {
   box-sizing: border-box;
 }
@@ -48,6 +56,16 @@ body {
   align-items: center;
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: white;
+}
+.button--order {
+  background-color: firebrick;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 35px 0 68px 0;
 }
 
 .heart {
@@ -203,7 +221,8 @@ header {
   border-radius: 25px 25px 0 0;
   background-color: #ededed;
   position: relative;
-  top: -40px;
+  top: -35px;
+  z-index: 1;
 }
 .menu__section {
   text-transform: uppercase;
@@ -221,23 +240,92 @@ header {
   margin: 15px 0;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 0s forwards;
+}
+.menu__item:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.menu__item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.menu__item:nth-child(5) {
+  animation-delay: 0.6s;
+}
+.menu__item:nth-child(6) {
+  animation-delay: 0.8s;
+}
+.menu__item--left {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.menu__item:hover > .menu__cost {
+  transform: translateX(-50px);
+  transition: 500ms;
+}
+.menu__item:hover .menu__desc {
+  transform: translateX(-50px);
+  padding-left: 50px;
+  transition: 500ms;
 }
 .menu__name {
   padding: 3px 0 8px 0;
 }
 .menu__desc {
   padding-bottom: 3px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 260px;
+  transition: 500ms;
 }
 .menu__cost {
   display: flex;
   align-items: flex-end;
-  padding: 0 12px 4px 0;
+  padding: 0px 2px 4px 0;
+  transition: 500ms;
+}
+.menu__check {
+  background-color: #99E2D0;
+  position: absolute;
+  right: 0px;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  transform: translateX(50px);
+  transition: 500ms;
+}
+
+.menu__item:hover > .menu__check {
+  transform: translateX(0);
+  transition: transform 500ms;
+}
+.menu__item:hover > .menu__check > .fa-check-circle {
+  transform: rotate(360deg);
+  transition: 500ms;
+}
+
+.fa-check-circle {
+  color: white;
+  background-color: #99E2D0;
+  transform: rotate(90deg);
+  transition: 500ms;
 }
 
 footer {
   background-color: #333333;
   color: white;
   padding: 25px 20px 20px 20px;
+  position: relative;
+  top: -35px;
 }
 
 .footer--img {

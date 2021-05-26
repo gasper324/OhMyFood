@@ -8,6 +8,15 @@
     align-items: center;
     background-image: linear-gradient(to bottom right, $color-secondary, $color-primary);
     color: $color-button-text;
+        &--order {
+            background-color: firebrick;
+        }
+}
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 35px 0 68px 0;
 }
 .heart {
     position: absolute;
