@@ -82,16 +82,14 @@ body {
   align-items: center;
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: white;
+  position: relative;
 }
 .button--order {
   background-color: firebrick;
 }
 
 .button-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 35px 0 68px 0;
+  position: relative;
 }
 
 .heart {
@@ -110,7 +108,7 @@ body {
   color: #6e6e6e;
 }
 .heart-on--home {
-  color: #ededed;
+  color: #bababa;
 }
 
 .heart-off {
@@ -436,8 +434,9 @@ footer {
 }
 
 .wineglass-container {
-  display: grid;
+  display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .wineglass {
@@ -445,34 +444,33 @@ footer {
   animation: homepage-fadeOut 3s ease-in-out;
   opacity: 0;
   position: absolute;
-  left: 45%;
-  margin-top: 30px;
+  margin-top: 80px;
 }
 .wineglass__base {
   width: 70px;
   height: 10px;
-  background-color: silver;
+  background-color: #bababa;
   border-radius: 10px 10px 2px 2px;
   margin: 0 7px;
 }
 .wineglass__stem {
   width: 10px;
   height: 70px;
-  background-color: silver;
+  background-color: #bababa;
   margin: 0 37px;
 }
 .wineglass__bowl {
   width: 80px;
   height: 120px;
   border-radius: 2px 2px 20px 20px;
-  border: solid 4px silver;
+  border: solid 4px #bababa;
   overflow: hidden;
   box-shadow: 0 0 0 10px white;
 }
 .wineglass__full {
   width: 78px;
   height: 110px;
-  background-color: skyblue;
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   border-radius: 0 0 17px 17px;
   position: absolute;
   top: 123px;
@@ -482,9 +480,19 @@ footer {
 }
 .wineglass__bottom-container {
   width: 88px;
-  height: 120px;
+  height: 100px;
   position: relative;
   background-color: white;
+}
+
+.loading-text {
+  width: 300px;
+  transform: translateX(-110px);
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  text-align: center;
+  font: 900 22px Shrikhand, serif;
 }
 
 /*# sourceMappingURL=style.css.map */

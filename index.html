@@ -10,13 +10,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 </head>
 <body>
-    <div class="wineglass">
-        <div class="wineglass__bowl">
-            <div class="wineglass__full"></div>
-        </div>
-        <div class="wineglass__bottom-container">
-            <div class="wineglass__stem"></div>
-            <div class="wineglass__base"></div>
+    <div class="wineglass-container">
+        <div class="wineglass">
+            <div class="wineglass__bowl">
+                <div class="wineglass__full"></div>
+            </div>
+            <div class="wineglass__bottom-container">
+                <div class="wineglass__stem"></div>
+                <div class="wineglass__base"></div>
+            </div>
+            <div class="loading-text">Preparing your favorite menus...</div>
         </div>
     </div>
 <div id="homepage">
@@ -30,7 +33,12 @@
     <section class="intro">
         <div class="intro__title">Book the menu you like</div>
         <div class="intro__subtitle">Discover top-of-the-art restaurants we picked for you</div>
-        <div class="button"><a href="#restaurants" class="link--explore">Explore our restaurants</a></div>
+        <div class="button-container">
+            <a href="#restaurants">
+                <span class="clickable"></span>
+            </a>
+            <div class="button">Explore our Restaurants</div>
+        </div>    
     </section>
     <section class="how-it-works font-content--bold">
         <div class="how-it-works__title font-content--large">How it works</div>
@@ -84,7 +92,7 @@
                     <div>New York</div>
                 </div>
                 <div class="restaurant-container__heart">
-                    <i class="heart-on far fa-heart"></i>
+                    <i class="heart-on heart-on--home far fa-heart"></i>
                     <input id="toggle-2" type="checkbox" class="heart">
                     <label for="toggle-2" class="heart-off">
                         <i class="fas fa-heart restaurant-container__heart--filled"></i>
@@ -103,7 +111,7 @@
                     <div>New York</div>
                 </div>
                 <div class="restaurant-container__heart">
-                    <i class="heart-on far fa-heart"></i>
+                    <i class="heart-on heart-on--home far fa-heart"></i>
                     <input id="toggle-3" type="checkbox" class="heart">
                     <label for="toggle-3" class="heart-off">
                         <i class="fas fa-heart restaurant-container__heart--filled"></i>
@@ -122,7 +130,7 @@
                     <div>New York</div>
                 </div>
                 <div class="restaurant-container__heart">
-                    <i class="heart-on far fa-heart"></i>
+                    <i class="heart-on heart-on--home far fa-heart"></i>
                     <input id="toggle-4" type="checkbox" class="heart">
                     <label for="toggle-4" class="heart-off">
                         <i class="fas fa-heart restaurant-container__heart--filled"></i>

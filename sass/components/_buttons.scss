@@ -8,15 +8,13 @@
     align-items: center;
     background-image: linear-gradient(to bottom right, $color-secondary, $color-primary);
     color: $color-button-text;
+    position: relative;
         &--order {
             background-color: firebrick;
         }
 }
 .button-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 35px 0 68px 0;
+    position: relative;
 }
 .heart {
     position: absolute;
@@ -32,7 +30,7 @@
     left: 0px;
     color: darken($color-bg, 50%);
     &--home {
-        color: $color-bg;
+        color: darken($color-bg, 20%);
     }
 }
 .heart-off {
