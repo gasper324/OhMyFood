@@ -2,3 +2,15 @@
     font: 900 22px Shrikhand, serif;
 
 }
+
+@mixin tablet {
+    @media screen and (min-width: map-get($breakpoints, tablet-min)){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: map-get($breakpoints, desktop)){
+        @content;
+    }
+}

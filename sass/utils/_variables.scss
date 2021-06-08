@@ -13,4 +13,8 @@ $color-wineglass:#bababa;
 
 $border-radius-restaurants: 15px;
 
-
+$breakpoints: (
+    tablet-min: 600px,
+    tablet-max: 1999.99px,
+    desktop: 1200px
+)

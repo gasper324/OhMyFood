@@ -83,6 +83,7 @@ body {
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: white;
   position: relative;
+  box-shadow: 2px 2px 2px 0 #d4d4d4;
 }
 .button--order {
   background-color: firebrick;
@@ -90,6 +91,8 @@ body {
 
 .button-container {
   position: relative;
+  margin: auto;
+  width: fit-content;
 }
 
 .heart {
@@ -160,6 +163,11 @@ header {
   color: white;
   text-decoration: none;
 }
+@media screen and (min-width: 600px) {
+  .link--footer {
+    margin-left: 5px;
+  }
+}
 .link--explore {
   color: white;
   text-decoration: none;
@@ -170,10 +178,32 @@ header {
   width: 100%;
   height: 100%;
 }
+.clickable--ontop {
+  z-index: 2;
+}
+.clickable--lighten {
+  border: none;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  color: white;
+}
+.clickable--lighten:hover {
+  background-image: linear-gradient(to bottom right, #ff88de, #9b63df);
+  box-shadow: 2px 2px 2px 0 #a1a1a1;
+}
 
 .restaurant {
   background-color: #ededed;
   padding: 55px 0 65px 0;
+}
+@media screen and (min-width: 600px) {
+  .restaurant {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .restaurant-title {
@@ -221,6 +251,12 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media screen and (min-width: 600px) {
+  .restaurant-container {
+    width: 47%;
+    margin: 0 0 3% 2%;
+  }
+}
 
 .restaurant-image {
   width: 100%;
@@ -241,7 +277,7 @@ header {
 
 .menu {
   width: 100%;
-  padding: 0 14px;
+  padding: 0 14px 50px 14px;
   border-radius: 25px 25px 0 0;
   background-color: #ededed;
   position: relative;
@@ -351,13 +387,29 @@ footer {
   position: relative;
   top: -35px;
 }
+@media screen and (min-width: 600px) {
+  footer {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+  }
+}
 
 .footer--img {
   filter: invert(100%);
   height: 20px;
+  display: flex;
+  align-items: center;
 }
 .footer__item {
   margin: 10px 0;
+}
+@media screen and (min-width: 600px) {
+  .footer__item {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
 }
 .footer--fas {
   width: 16px;

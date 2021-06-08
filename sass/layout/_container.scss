@@ -1,6 +1,10 @@
 .restaurant {
     background-color: $color-bg;
     padding: 55px 0 65px 0;
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 .restaurant-title {
     width: 100%;
@@ -46,6 +50,11 @@
             -webkit-text-fill-color: transparent;
         }
     }
+    @include tablet {
+        width: 47%;
+        margin: 0 0 3% 2%;
+        
+    }
 }
 .restaurant-image {
     width: 100%;
@@ -64,7 +73,7 @@
 }
 .menu {
     width: 100%;
-    padding: 0 14px;
+    padding: 0 14px 50px 14px;
     border-radius: 25px 25px 0 0;
     background-color: $color-bg;
     position: relative;

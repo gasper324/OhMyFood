@@ -9,12 +9,15 @@
     background-image: linear-gradient(to bottom right, $color-secondary, $color-primary);
     color: $color-button-text;
     position: relative;
+    box-shadow: 2px 2px 2px 0 $color-border;
         &--order {
             background-color: firebrick;
         }
 }
 .button-container {
     position: relative;
+    margin: auto;
+    width: fit-content;
 }
 .heart {
     position: absolute;
