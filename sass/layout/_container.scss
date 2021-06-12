@@ -158,6 +158,18 @@
         transform: translateX(50px);
         transition: 500ms;
         }
+    &__sections {
+        @include desktop {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            & > div {
+                width: 31.33%;
+                margin: 0 1%;
+            }
+        }
+            }
+
 }
 .menu__item:hover {
     & > .menu__check {
