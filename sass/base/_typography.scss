@@ -28,4 +28,7 @@ body {
         color: fade-out($color-text, .5);
         font-size: 14px;
     }
+    &--hidden {
+        visibility: hidden;
+    }
 }
